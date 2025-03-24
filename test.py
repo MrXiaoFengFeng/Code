@@ -33,8 +33,8 @@ class TestAllureDemo:
     @allure.story("测试用例 2: 验证断言失败")
     def test_failed_case(self):
         print_message("这是一个失败的测试用例。")
-        assert False, "故意失败以验证 Allure 报告"
-        # assert True, "故意失败以验证 Allure 报告"
+        # assert False, "故意失败以验证 Allure 报告"
+        assert True, "故意失败以验证 Allure 报告"
 
     @allure.story("测试用例 3: 验证附件功能")
     def test_attachment(self):
